@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+font-family: Arial;
+
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Navbar container */
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Card Game</h1>
+  <p>Brian Mikolajczyk</p>
+</div>
+
+
+
+<div class="navbar">
+
+
+<div class="dropdown">
+<button class="dropbtn">dev.log
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="../../devlogs//magenta/magenta.html">Magenta</a>
+<a href="../../devlogs/red/red.html">Red</a>
+<a href="../../devlogs/orange/orange.html">Orange</a>
+<a href="../../devlogs/yellow/yellow.html">Yellow</a>
+<a href="../../devlogs/green/green.html">Green</a>
+<a href="../../devlogs//teal/teal.html">Teal</a>
+<a href="../../devlogs/blue/blue.html">Blue</a>
+<a href="../../devlogs/indigo/indigo.html">Indigo</a>
+<a href="../../devlogs/violet/violet.html">Violet</a>
+<a href="../../devlogs/bronze/bronze.html">Bronze</a>
+<a href="../../devlogs/silver/silver.html">Silver</a>
+<a href="../../devlogs/gold/gold.html">Gold</a>
+</div>
+</div>
+
+
+
+<div class="dropdown">
+<button class="dropbtn">Projects
+<i class="fa fa-caret-down"></i>
+</button>
+<div class="dropdown-content">
+<a href="../../../DIG 4713/Projects/Website/home2.html">Game Design 1: Physical Prototype of Digital Game</a>
+<a href="../../../DIG 4713/Projects/Card_Game/Card_Game.html">Game Design 2: Card Game</a>
+<a href="#">Game Design 3: Modified Board Game</a>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<div class="row" style="">
+<div class="leftcolumn">
+	<div class="card">
+	  <h2>Elementals</h2>
+      	<p>I&rsquo;ll just start by saying that this group spared no effort or time in the creation of this card game. This is bold approach that sought inspiration from War, Risk, Magic, Yu-Gi-Oh, and many RPG games in a culmination that is sure to cause life-long anxiety. However, I digress, let us get into the nitty gritty. </p>
+        <p> We call this game elementals. (It was either that or &ldquo;card game&rdquo;.) As the name suggests this game is focused around elements or in playing card terms, suits. The suits in this game play a huge factor in the core mechanics and dynamics of the game. They along with the buff/ de-buff system that we developed encompass and balance the entire power structure of the game. </p>
+        <p>So, how do you play? Well, firstly you&rsquo;ll need four players and a deck of 52 cards w/ jokers. Don&rsquo;t worry there is no scoring. The main objective in the game is to be the last player still holding cards in your hand. Separate the entire deck into two piles. One with the jacks, queens, kings, aces, 2s, 3s, and jokers. Those are the buff/de-buff cards. Next, in the other pile you should only have the 4s, 5s, 6s, 7s, 8s, 9s, and 10s. Those are the battling cards. Shuffle both decks thoroughly. Place the buff/de-buff deck in the center of the table. Then deal one battle card to each player starting at the left of the dealer until each player has a total of seven battle cards to play with.</p>
+        <p><br>
+          
+        </p>
+
+    </div>
+
+	<div class="card">
+	  <h2>BUFF/DE-BUFFS</h2>
+      
+		<p>Alright, before the game begins let&rsquo;s explain the how the game actually works. Each player will take a turn around the table starting at the left of the dealer at the beginning. The goal for the player is to knock out the other players from play. We do this by battling with the battle cards. What beats what? Each battle card has a number on them. Numbers can range from four to ten, that number represents the health and damage that card can currently do by default. When battling against another battle card the greater value number wins. In the result of a win the loser places their card in the discard pile. Players want their opponents to run out of cards.</p>
+        <p>But, wouldn&rsquo;t the ten be the best card in the game and couldn&rsquo;t there be a four-way tie? Who wins? Well, there&rsquo;s more to battling in this game than just the number on the battle card. We added a suit buff system and a buff/de-buff card system to shake things up a bit. Both of these two concepts of our game build the entire dynamic and core mechanics of the game. At the beginning of each of your turns you will draw a buff/de-buff card. This can either be a jack, queen, king, ace, two, three, or joker. Each of these does something different. Jacks apply a plus one value buff to all battling battle cards that correspond to the suit of the jack so as long as the buff card remains in play. Queens apply a plus two value buff to all battling battle cards that correspond to the suit of the queen so as long as the buff card remains in play. Kings apply a plus one value buff to all battling battle cards that correspond to the suit of the king so as long as the buff card remains in play. Aces apply a minus one value de-buff to all battling battle cards that correspond to the suit of the ace so as long as the de-buff card remains in play. Twos apply a minus two value de-buff to all battling battle cards that correspond to the suit of the two so as long as the de-buff card remains in play. Threes apply a minus three value de-buff to all battling battle cards that correspond to the suit of the three so as long as the de-buff card remains in play. Having an anxiety problem? The jokers are immunity cards that if played as a buff can protect your card from entering the discard pile for one turn. Wow! That was a lot of info. Yeah well there is a lot more. Buff and de-buff cards can cancel each other out. If the total value of a buff is zero discard all parties involved. [Example: three of hearts and king of hearts cancels out because -3+3=0 making the buff useless. Instead on king, jack and queen would cancel out 3 as well.] </p>
+    </div>
+	
+	<div class="card">
+	<h2>SUIT RULE</h2>
+      
+	<p>The buff mechanics aren&rsquo;t over yet, the suit of the battle cards can also apply a buff. Depending on which suits your battling against players may receive a plus three value buff to their battle card just because they&rsquo;re battling against a suit that their battle card&rsquo;s suit trumps. We call this effect the Suit Rule. How do I know when to apply this rule? Here&rsquo;s the scenario break down; </p>
+    <p>if hearts vs. spades then hearts receive plus three buff<br>
+      if spades vs. diamonds then spades receive plus three buff<br>
+      if diamonds vs. clubs then diamonds receive plus three buff<br>
+      if clubs vs. hearts then clubs receive plus three buff</p>
+    <p><br>
+    </p>
+      
+
+
+	</div>
+	
+	<div class="card">
+	<h2>TRADES AND STRAGETY</h2>
+      
+	<p>So, it is quite possible to have multiple buffs/ de-buffs going on at once. However, players are limited to only three buff/de-buff cards on their side of the field. Should a player want to play another then they must discard their oldest buff/de-buff. It is important to note the buff/de-buff cards apply to the entire table so you can play off of another players buff. Or the player could do a skill wipe meaning that they discard all of their buffs/de-buffs. We did this because it balances the battle cards out and can add an element of uncertainty. It also adds a constant power struggle in the game. </p>
+    <p>So, say you&rsquo;re dealt a bad hand are you stuck with those cards? Well no actually players can trade with each other. Players are welcome to negotiate for cards or they can make trades anonymous. Trades in the game a final there are no take backs. Trades must be done on a card per card bases.</p>
+    <p>This game offers plenty of chances to win. Timing, teamwork, and targeting key to the success of this game. You don&rsquo;t have to be dealt a 10 to win. With the right combo of buffs/de-buffs certain cards can be crippled. In the playtests that we did the diamonds suit became utterly useless, and on one occasion there were so many de-buffs in play some cards became a value of zero and beat a value of negative one. You can&rsquo;t make this stuff up. Anyone can play this game as long as you can do basic addition and subtraction. The game was a lot of fun.</p>
+    <p><br>
+    </p>
+      
+
+
+	</div>
+	
+	
+</div>
+	
+	
+
+
+
+  <div class="rightcolumn">
+    <div class="card">
+      <p style="text-align: center"><a href="https://youtu.be/k8Y0jG1defw"><img src="youtubelogo.png" width="275" height="171"></a></p>
+    </div>
+    <div class="card">
+      <h3>Pictures</h3>
+		<div class="fakeimg"><p><img src="DSCF2012.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2013.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2014.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2015.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2016.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2017.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2018.jpg" height="200" width="266"></p></div>
+		<div class="fakeimg"><p><img src="DSCF2019.jpg" height="200" width="266"></p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+	<h2>End of Card Game</h2>
+</div>
+
+
+
+</body>
+</html>
